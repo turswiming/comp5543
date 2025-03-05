@@ -1,0 +1,16 @@
+#dataset
+/data
+
+#caches of environment
+/__pycache__
+/.vscode
+/.idea
+
+#virtual environment
+/.venv
+
+#pyc files
+*.pyc
+
+#output files
+mnist_samples.png
