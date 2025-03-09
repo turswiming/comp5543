@@ -14,3 +14,5 @@
 
 #output files
 mnist_samples.png
+Epoch*Batch*.png
+/logs
