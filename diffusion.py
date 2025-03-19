@@ -161,7 +161,7 @@ class DiffusionModel:
         noise = torch.randn_like(x0)*0.3
         #clamp noise to [-1,1]
         noise = torch.clamp(noise,-1,1)
-        xt = torch.sqrt(alpha_t) * x0 + (1-torch.sqrt(alpha_t)) * noise
+        xt = torch.sqrt(alpha_t) * x0 + torch.sqrt(1-alpha_t) * noise
         return xt
 
     def train(self, train_loader, epochs=10):
